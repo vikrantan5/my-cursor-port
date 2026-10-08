@@ -1,7 +1,6 @@
 "use client";
 
 import { AlertCircle, Bell, Bot, GitBranch, Radio, TriangleAlert } from "lucide-react";
-import { CODELOOM_SELF_PRS } from "@/lib/codeloom";
 import { getOpenable } from "@/lib/workspace/queries";
 import { useWorkbench } from "@/state/workbench-context";
 
@@ -27,14 +26,13 @@ export function StatusBar() {
             <AlertCircle className="size-3.5" strokeWidth={1.8} />0
           </span>
           <span className="flex items-center gap-1 text-warning">
-            <TriangleAlert className="size-3.5" strokeWidth={1.8} />
-            14
+            <TriangleAlert className="size-3.5" strokeWidth={1.8} />2
           </span>
         </span>
         <button
           type="button"
-          onClick={() => openFile("codeloom")}
-          title="The agent has been busy. Open major-projects/codeloom.md"
+          onClick={() => openFile("hireai")}
+          title="Open major-projects/hireai.md"
           className="flex shrink-0 items-center gap-1.5 rounded-sm px-1 text-fg hover:bg-hover"
         >
           <span className="relative flex size-2">
@@ -42,15 +40,15 @@ export function StatusBar() {
             <span className="relative inline-flex size-2 rounded-full bg-[#89d185]" />
           </span>
           <Bot className="size-3.5" strokeWidth={1.8} />
-          codeloom
+          vikrant
           <span className="hidden text-dim lg:inline">
-            · {CODELOOM_SELF_PRS.merged} PRs merged into itself
+            · shipping HireAI & MovieLab
           </span>
         </button>
         <span className="min-w-0 truncate">
           {statusMessage ?? (
             <span className="hidden sm:inline">
-              0 errors, 14 personality warnings
+              0 errors, 2 LeetCode streak warnings
             </span>
           )}
         </span>

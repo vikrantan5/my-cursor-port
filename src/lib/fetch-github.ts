@@ -10,7 +10,9 @@ const REVALIDATE_SECONDS = 5 * 60;
 const TIMELINE_LIMIT = 40;
 const REPO_LOOKBACK_MS = 90 * 24 * 60 * 60 * 1000;
 const USER_AGENT =
-  "iresharma-portfolio/1.0 (+https://github.com/iresharma/cursor-portfolio)";
+  // "iresharma-portfolio/1.0 (+https://github.com/iresharma/cursor-portfolio)";
+
+  "vikrantan5-portfolio/1.0 (+https://github.com/vikrantan5/my-cursor-port)";
 
 type GithubUser = {
   login: string;

@@ -25,8 +25,8 @@ export async function generateMetadata({
     keywords: [
       project.title,
       project.product,
-      "Iresh Sharma",
-      "WatchIreshStruggle",
+        "Vikrant Singh",
+      "FactDefiner",
     ],
     alternates: { canonical: url },
     openGraph: {

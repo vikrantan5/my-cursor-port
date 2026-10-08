@@ -25,7 +25,7 @@ export function BootScreen() {
   return (
     <div className="flex h-full flex-col items-center justify-center px-8">
       <p className="font-mono text-[17px] tracking-tight text-fg">
-        iresharma
+         vikrantan5
         <span className="boot-cursor ml-0.5 inline-block h-[17px] w-[7px] translate-y-[2px] bg-fg align-baseline" />
       </p>
       <p className="mt-3 text-[12px] text-dim">warming up the short version</p>

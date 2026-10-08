@@ -2,7 +2,7 @@ import type { WorkspaceNode } from "./types";
 
 export { outlineItems } from "./outline";
 
-export const WORKSPACE_NAME = "iresharma";
+export const WORKSPACE_NAME = "vikrantan5";
 
 export const fileTree: WorkspaceNode = {
   id: "root",
@@ -19,16 +19,13 @@ export const fileTree: WorkspaceNode = {
       kind: "folder",
       children: [
         {
-          id: "codeloom",
-          name: "codeloom.md",
+          id: "hireai",
+          name: "hireai.md",
           kind: "file",
           language: "markdown",
-          decoration: { letter: "M", title: "Modified — six repos and an agent since you last looked" },
+          decoration: { letter: "M", title: "Modified — 100+ users and a Razorpay webhook since you last looked" },
         },
-        { id: "lens-distill", name: "lens-distill.md", kind: "file", language: "markdown" },
-        { id: "seeksphere", name: "seeksphere.md", kind: "file", language: "markdown" },
-        { id: "reach", name: "reach.md", kind: "file", language: "markdown" },
-        { id: "g-notify", name: "g-notify.md", kind: "file", language: "markdown" },
+        { id: "movielab", name: "movielab.md", kind: "file", language: "markdown" },
       ],
     },
     {
@@ -37,9 +34,8 @@ export const fileTree: WorkspaceNode = {
       kind: "folder",
       children: [
         { id: "hobbies", name: "hobbies.md", kind: "file", language: "markdown" },
-        { id: "gaming", name: "gaming.md", kind: "file", language: "markdown" },
+        { id: "achievements", name: "achievements.md", kind: "file", language: "markdown" },
         { id: "youtube", name: "youtube.md", kind: "file", language: "markdown" },
-        { id: "blog", name: "blog.md", kind: "file", language: "markdown" },
       ],
     },
   ],

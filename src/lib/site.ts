@@ -1,30 +1,27 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://iresharma.com";
-export const SITE_NAME = "iresharma";
-export const SITE_TITLE = "Iresh Sharma — fullstack engineer";
+export const SITE_URL = "https://vikrantsingh.dev";
+export const SITE_NAME = "vikrantan5";
+export const SITE_TITLE = "Vikrant Singh — full stack developer";
 export const SITE_DESCRIPTION =
-  "Iresh Sharma's software engineering portfolio, themed as a Cursor window. Member of Technical Staff at Salesforce in Bengaluru. Previously Twilio and SuperTokens. WatchIreshStruggle by night.";
-export const SITE_TAGLINE = "Fullstack by day. WatchIreshStruggle by night.";
+  "Vikrant Singh's software engineering portfolio, themed as a Cursor window. IT undergraduate at Netaji Subhash Engineering College shipping HireAI and MovieLab. 300+ LeetCode problems solved. FactDefiner Vikrant on YouTube.";
+export const SITE_TAGLINE = "Full stack by day. FactDefiner by night.";
 
 export const SITE_AUTHOR = {
-  name: "Iresh Sharma",
-  jobTitle: "Member of Technical Staff",
-  company: "Salesforce",
-  location: "Bengaluru, India",
+  name: "Vikrant Singh",
+  jobTitle: "IT Undergraduate & Full Stack Developer",
+  company: "Netaji Subhash Engineering College",
+  location: "Kolkata, India",
 };
 
 export const SITE_LINKS = {
-  github: "https://github.com/iresharma",
-  linkedin: "https://linkedin.com/in/iresharma",
-  youtube: "https://www.youtube.com/@iresharma",
-  blog: "https://blog.iresharma.com",
-  leetcode: "https://leetcode.com/u/iresharma/",
-  hashnode: "https://hashnode.com/@Iresharma",
+  github: "https://github.com/vikrantan5",
+  linkedin: "https://www.linkedin.com/in/vikrant-singh5/",
+  youtube: "https://www.youtube.com/@Factdefiner",
 } as const;
 
 export const OG_ALT =
-  "Iresh Sharma — fullstack engineer at Salesforce. Portfolio themed as a Cursor window.";
+  "Vikrant Singh — full stack developer and IT undergraduate. Portfolio themed as a Cursor window.";
 
 export const siteMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -38,21 +35,19 @@ export const siteMetadata: Metadata = {
   creator: SITE_AUTHOR.name,
   publisher: SITE_AUTHOR.name,
   keywords: [
-    "Iresh Sharma",
-    "fullstack engineer",
-    "Salesforce",
-    "Twilio",
-    "SuperTokens",
-    "Bengaluru",
-    "software engineer",
-    "Voice infra",
-    "TypeScript",
-    "WatchIreshStruggle",
-    "CodeLoom",
-    "Lens Distill",
-    "SeekSphere",
-    "Reach",
-    "G-Notify",
+    "Vikrant Singh",
+    "full stack developer",
+    "IT undergraduate",
+    "Netaji Subhash Engineering College",
+    "Kolkata",
+    "HireAI",
+    "MovieLab",
+    "React",
+    "Next.js",
+    "Node.js",
+    "DSA",
+    "LeetCode",
+    "FactDefiner",
   ],
   category: "portfolio",
   referrer: "origin-when-cross-origin",
@@ -133,12 +128,12 @@ export function personJsonLd() {
         },
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Bengaluru",
+          addressLocality: "Kolkata",
           addressCountry: "IN",
         },
         alumniOf: {
           "@type": "CollegeOrUniversity",
-          name: "The National Institute of Engineering, Mysuru",
+          name: "Netaji Subhash Engineering College",
         },
         description: SITE_DESCRIPTION,
         sameAs: Object.values(SITE_LINKS),

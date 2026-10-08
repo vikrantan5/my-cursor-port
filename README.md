@@ -1,17 +1,18 @@
-# iresharma
+# Vikrant Singh
 
 Software engineering portfolio with two surfaces:
 
-- **Desktop** — a Cursor editor window. Explorer is the site map, the editor opens pages, chat is an agent that only talks about Iresh.
+- **Desktop** — a Cursor editor window. Explorer is the site map, the editor opens pages, chat is an agent that only talks about Vikrant.
 - **Mobile** — a short boot, then the same agent: about, chips, five replies, then it is broke.
 
 ## Where content lives
 
 - File tree: `src/lib/workspace/tree.ts`
 - Page bodies: `src/lib/workspace/documents.ts` plus `src/lib/workspace/project-documents.ts`
-- Featured projects: `/projects/codeloom`, `/projects/lens-distill`, `/projects/seeksphere`, `/projects/reach`, `/projects/g-notify`
+- Featured projects: `/projects/hireai`, `/projects/movielab`
 - Mobile chips and copy: `src/lib/mobile/content.ts`
-- Agent: `src/lib/agent/` plus `POST /api/chat` (OpenRouter, 5-message quota)
+- Agent: `POST {BACKEND_URL}/api/chat` (FastAPI + Emergent LLM key, 5-message quota)
+- GitHub activity + agent chat are served by the FastAPI backend, not Next.js API routes — see `/app/backend/server.py`.
 
 ## Desktop shortcuts
 
@@ -21,5 +22,5 @@ Software engineering portfolio with two surfaces:
 - `⌘W` / `Ctrl+W` — close tab
 
 ```bash
-npm run dev
+yarn dev
 ```

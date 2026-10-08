@@ -1,24 +1,23 @@
-import { GAMING_TRACKERS } from "@/lib/gaming";
 import { projectDocuments } from "./project-documents";
 import type { DocumentContent } from "./types";
 
 export const documents: Record<string, DocumentContent> = {
   readme: {
     kind: "markdown",
-    title: "Iresh Sharma",
+    title: "Vikrant Singh",
     status: "live",
     blocks: [
       {
         type: "callout",
-        text: "Fullstack by day. WatchIreshStruggle by night. The old website still thinks I work at Twilio. This window is the patch.",
+        text: "IT undergrad who ships fullstack apps by day and reviews facts on FactDefiner by night. 300+ LeetCode problems solved and counting.",
       },
       {
         type: "p",
-        text: "Bengaluru. Member of Technical Staff at Salesforce, currently helping build native Voice infra. Before that: Twilio, SuperTokens, a stack of internships and campus clubs, and a freelance habit I have not successfully quit. NIE Mysore, Computer Science, class of someone who started a GitHub account in 2017 and never emotionally left.",
+        text: "Kolkata. B.Tech in Information Technology at Netaji Subhash Engineering College, class of 2027, YGPA 8.47/10. Strong on Data Structures, Algorithms, OOP, and DBMS, and happiest building API-driven web apps and data ingestion pipelines with JavaScript/TypeScript, Node.js, SQL, and MongoDB.",
       },
       {
         type: "p",
-        text: "I ship production systems at scale and then immediately start a scrappy MVP because idle hands open Cursor. Kafka at tens of millions of events a minute, Flutter SDKs, Gmail APIs, 3D printers, basketball, hip-hop, and a LeetCode repo whose README admits competitive programming never really attracted me. That is the brand.",
+        text: "I build the full thing — scraping pipeline, database schema, auth, billing — not just the UI. HireAI exists because job boards are a mess and recruiters don't read résumés carefully. MovieLab exists because I wanted a movie app that didn't refetch the same page twice. This portfolio exists because a plain landing page felt like undercounting the work.",
       },
       {
         type: "h2",
@@ -26,13 +25,12 @@ export const documents: Record<string, DocumentContent> = {
       },
       {
         type: "p",
-        text: "CodeLoom, a coding agent that has now opened more pull requests on its own repo than I have on most of mine. Engine, cloud sandboxes, a web client, a Go TUI: six repos, one socket. The receipts are in major-projects/codeloom.md, including the one where it failed to recognise itself as Python. The green dot in the status bar opens it. It will not stop bragging.",
+        text: "HireAI, a recruitment platform with a Playwright job-ingestion pipeline, seven Firestore collections, Groq-generated interview questions, and Razorpay subscription billing. Already past 100 users. The receipts are in major-projects/hireai.md.",
       },
       {
         type: "links",
         items: [
-          { label: "codeloom.iresharma.com/engine/results — every run, itemised", href: "https://codeloom.iresharma.com/engine/results" },
-          { label: "github.com/iresharma/codeloom — the umbrella repo", href: "https://github.com/iresharma/codeloom" },
+          { label: "github.com/vikrantan5 — the repos", href: "https://github.com/vikrantan5" },
         ],
       },
       {
@@ -42,12 +40,12 @@ export const documents: Record<string, DocumentContent> = {
       {
         type: "ul",
         items: [
-          "about.md — the human patch notes.",
-          "career.md — jobs, in chronological self-roast.",
-          "projects.ts — the index. projects/ — the actual writeups.",
-          "projects/codeloom.md, lens-distill.md, seeksphere.md, reach.md, g-notify.md — roast, then the real systems.",
-          "extras/ — hobbies, gaming (PSN, Steam, Valorant), YouTube, the blog.",
-          "Outline — posts and projects, because I process trauma as markdown.",
+          "about.md — the human version.",
+          "career.md — internship, education, and the stuff I won.",
+          "projects.ts — the index. major-projects/ — the actual write-ups.",
+          "major-projects/hireai.md, movielab.md — the systems, in detail.",
+          "extras/ — hobbies, achievements, the YouTube channel.",
+          "Outline — the career timeline, because scrolling is slower than clicking.",
         ],
       },
       {
@@ -57,11 +55,9 @@ export const documents: Record<string, DocumentContent> = {
       {
         type: "links",
         items: [
-          { label: "blog.iresharma.com — WatchIreshStruggle", href: "https://blog.iresharma.com" },
-          { label: "github.com/iresharma — 100+ repos, some finished", href: "https://github.com/iresharma" },
-          { label: "linkedin.com/in/iresharma — the professional fiction", href: "https://linkedin.com/in/iresharma" },
-          { label: "youtube.com/@iresharma — same brand, moving pictures", href: "https://www.youtube.com/@iresharma" },
-          { label: "leetcode.com/u/iresharma — I swore I was done with this", href: "https://leetcode.com/u/iresharma/" },
+          { label: "github.com/vikrantan5 — repos, some finished", href: "https://github.com/vikrantan5" },
+          { label: "linkedin.com/in/vikrant-singh5 — the professional version", href: "https://www.linkedin.com/in/vikrant-singh5/" },
+          { label: "youtube.com/@Factdefiner — FactDefiner Vikrant", href: "https://www.youtube.com/@Factdefiner" },
         ],
       },
     ],
@@ -73,15 +69,11 @@ export const documents: Record<string, DocumentContent> = {
     blocks: [
       {
         type: "callout",
-        text: "Engineering Voice infra at Salesforce by day. Hacking on products that become blog posts by night. Open for freelance, closed for small talk about work-life balance.",
+        text: "IT undergraduate who treats side projects like exam prep: painful, scheduled too late at night, and somehow still finished. Open to internships and full-time roles, closed for small talk about sleep schedules.",
       },
       {
         type: "p",
-        text: "I am a fullstack engineer who treats side projects like cardio: painful, public, and somehow always scheduled after midnight. I like TypeScript enough to argue with it, Python enough to automate my YouTube problem, and Flutter enough to have owned an SDK at a startup that authenticates half the internet's side projects.",
-      },
-      {
-        type: "p",
-        text: "The through-line is not a stack. It is 'I would rather build the tool than do the chore.' G-Notify exists because Gmail would not send HTML. The Shorts generator exists because making vertical videos by hand felt like a war crime. Lens Distill exists because I could not finish Venture Deals. SeekSphere exists because filter drawers are a query planner with worse UX. CodeLoom exists because grep is not comprehension, and now it reviews its own pull requests. This portfolio exists because a normal landing page felt like lying. The long versions are in projects/.",
+        text: "I'm a fullstack engineer-in-training who likes TypeScript enough to fight with it, Python enough to automate the boring parts, and SQL enough to actually think in joins. The through-line is not a single stack — it's 'build the whole pipeline, not just the page.' HireAI exists because job listings across the internet are duplicated, inconsistent, and unranked. MovieLab exists because I wanted to see how far Redux Toolkit caching could go on a free TMDB quota.",
       },
       {
         type: "h2",
@@ -90,16 +82,15 @@ export const documents: Record<string, DocumentContent> = {
       {
         type: "ul",
         items: [
-          "Bengaluru, after Mysuru, after NIE.",
-          "GDSC Lead, IEEE webmaster, campus ambassador — I collected titles like they were Pokémon.",
-          "Photography when the light is good. Hip-hop when it is not.",
-          "Basketball as cardio, allegedly.",
-          "3D printing as a second compiler, except the errors are plastic.",
+          "Kolkata, at Netaji Subhash Engineering College, Information Technology, class of 2027.",
+          "300+ LeetCode problems solved — competitive programming was never the goal, consistency was.",
+          "FactDefiner Vikrant on YouTube — fact-based content, filmed between assignments.",
+          "Hackathons and algorithm contests whenever the timing works out.",
         ],
       },
       {
         type: "p",
-        text: "I write at WatchIreshStruggle, which is not a humble brag. It is a content strategy and a warning label.",
+        text: "I make videos as FactDefiner Vikrant, which is not a career pivot. It's a content habit that runs parallel to the engineering one.",
       },
     ],
   },
@@ -110,49 +101,33 @@ export const documents: Record<string, DocumentContent> = {
     blocks: [
       {
         type: "callout",
-        text: "The LinkedIn version is 'shipped production systems at scale.' The comments version is below.",
+        text: "The résumé version says 'Information Technology undergraduate with hands-on experience building API-driven web applications.' This is the slightly longer version.",
       },
       {
         type: "h2",
-        text: "Salesforce — Member of Technical Staff",
+        text: "Tending To Infinity — Full Stack Developer Intern",
       },
       {
         type: "p",
-        text: "Dec 2025 → now. Native Voice infra. I went from Twilio, a company whose entire personality is APIs for talking, to Salesforce, a company whose entire personality is CRM, to work on… talking. The bit writes itself. Specialist on paper. Still googling internal acronyms in private.",
+        text: "Oct 2025 → Nov 2025. Built responsive, cross-browser web applications using Next.js, JavaScript, HTML, and CSS. Implemented server-side rendering and a reusable component library, which improved Lighthouse performance scores by roughly 30% on the pages that got migrated. Worked inside a Git-based branching workflow, and spent real time debugging and profiling during code review and QA cycles — the less glamorous half of the job that actually teaches you something.",
       },
       {
         type: "h2",
-        text: "Twilio — L1, then L2, plus a summer as an intern who stayed in the plot",
+        text: "Netaji Subhash Engineering College",
       },
       {
         type: "p",
-        text: "Intern on Flex in 2022: Java microservice for account config, a CRM plugin that stitched the same customer's calls across channels, and a reliability fix so the thing could boot without memcached. Then I came back as L1 in 2023 and did the grown-up sequel: Kafka Streams chewing tens of millions of events a minute under a sub-5-second SLA. Disaster recovery that copied terabytes across Aurora and DynamoDB with a 30-minute delay and the reporting APIs to prove nobody had lied. Notifications that pager-duty your custom rules and then apologize when the system recovers. Also UI, because fullstack means you don't get to pick.",
-      },
-      {
-        type: "p",
-        text: "L2 lasted four months in 2025 and then Salesforce called. I like to think I speedran Big Tech.",
+        text: "B.Tech in Information Technology, 2023 → 2027, YGPA 8.47/10. The coursework that actually shows up in the projects: Data Structures & Algorithms, Object-Oriented Programming, DBMS & SQL, and System Design. The 300+ solved LeetCode problems are the unofficial lab component nobody assigned.",
       },
       {
         type: "h2",
-        text: "SuperTokens — Software Engineer",
-      },
-      {
-        type: "p",
-        text: "Nov 2022 → Aug 2023. Open-source auth. I touched the Flutter, Go, Node, and Python SDKs so developers in four languages could have the same identity crisis. Owned search on the user-management dashboard. Lived in Discord helping people who had read the docs and chosen violence. Started by taking the Flutter SDK, adding Dio, and updating drivers. Ended by knowing too much about sessions.",
-      },
-      {
-        type: "h2",
-        text: "The origin story, compressed",
+        text: "Achievements",
       },
       {
         type: "ul",
         items: [
-          "Triomics, 2022 — joined mid-release, fixed codegen, inactivity auth, and enough UI that the pixels stopped arguing.",
-          "Exinous, 2022 — custom enterprise software. ERPs. The word 'custom' was doing a lot of work.",
-          "Learners Digital, 2020–21 — shipped a cross-platform edtech app. Play Store. Real users. Real crashlytics.",
-          "Deshik Labs, 2020–22 — Mysuru fullstack years. This is where I learned that 'full stack' is a personality.",
-          "AcadBoost, 2020 — recorded a web course. I have been WatchIreshStruggle longer than the blog admits.",
-          "NIE Mysore, CSE 2019–23 — GDSC Lead, DSC web lead, IEEE Computer Society tech lead, IEEE webmaster. I was, briefly, a student org.",
+          "1st place, Algothon (GFG x NSEC) — designed and implemented an optimized algorithmic solution under a fixed time limit.",
+          "Best Innovation Idea, Hult Prize — presented a scalable business innovation concept.",
         ],
       },
     ],
@@ -161,9 +136,9 @@ export const documents: Record<string, DocumentContent> = {
     kind: "code",
     language: "typescript",
     lines: [
-      "// iresharma/projects.ts",
-      "// compiled from github, linkedin, and poor impulse control",
-      "// long versions: projects/codeloom.md, lens-distill.md, seeksphere.md, reach.md, g-notify.md",
+      "// vikrantan5/projects.ts",
+      "// compiled from github, resume, and a habit of finishing things",
+      "// long versions: major-projects/hireai.md, movielab.md",
       "",
       "export type Project = {",
       "  name: string;",
@@ -173,91 +148,31 @@ export const documents: Record<string, DocumentContent> = {
       "  originStory: string;",
       "};",
       "",
-      "export const dayJob = {",
-      "  company: \"Salesforce\",",
-      "  doing: \"native Voice infra\",",
-      "  previously: [\"Twilio\", \"SuperTokens\"],",
+      "export const status = {",
+      "  studying: \"B.Tech Information Technology, Netaji Subhash Engineering College\",",
+      "  ygpa: 8.47,",
+      "  internshipsDone: [\"Tending To Infinity\"],",
+      "  leetcodeSolved: 300,",
       "};",
       "",
       "export const shipped: Project[] = [",
       "  {",
-      "    name: \"CodeLoom\",",
-      "    pitch: \"coding agent: orchestrator, six subagents, worktrees, a PR at the end. You keep merge\",",
-      "    stack: [\"Python engine\", \"FastAPI + Docker\", \"Next.js\", \"Go TUI\", \"tree-sitter\", \"LSP\"],",
+      "    name: \"HireAI\",",
+      "    pitch: \"AI-powered recruitment platform: scrape jobs, dedupe them, generate interview questions, bill the subscription\",",
+      "    stack: [\"Next.js\", \"TypeScript\", \"Firestore\", \"Groq API\", \"Playwright\", \"Razorpay\"],",
       "    shipped: true,",
-      "    originStory: \"educative attempt, typo in the GitHub bio, now opens PRs on its own repo\",",
+      "    originStory: \"job boards were a mess of duplicate listings. 100+ users later, still is, just less so.\",",
       "  },",
       "  {",
-      "    name: \"Lens Distill\",",
-      "    pitch: \"PDF plus a topic lens becomes claims, a vocabulary, and a concept graph\",",
-      "    stack: [\"Next.js\", \"Neon pgvector\", \"Haiku\", \"Sonnet\", \"Opus\"],",
+      "    name: \"MovieLab\",",
+      "    pitch: \"movie discovery platform on React and TMDB, with Redux Toolkit doing the caching nobody asked for\",",
+      "    stack: [\"React.js\", \"Redux Toolkit\", \"TMDB API\"],",
       "    shipped: true,",
-      "    originStory: \"I could not finish Venture Deals. I built a pipeline. I still have not read Venture Deals.\",",
-      "  },",
-      "  {",
-      "    name: \"SeekSphere\",",
-      "    pitch: \"natural language in, SQL-shaped catalog results out, Clerk-shaped SDK\",",
-      "    stack: [\"intent classifier\", \"LLM-to-SQL\", \"MCP connectors\", \"@seeksphere/sdk\"],",
-      "    shipped: true,",
-      "    originStory: \"filters are a query planner with worse UX. SuperTokens muscle memory.\",",
-      "  },",
-      "  {",
-      "    name: \"Reach\",",
-      "    pitch: \"work desk for creators who also have a calendar, inbox, and a Shopify tab they should close\",",
-      "    stack: [\"Remix\", \"Next\", \"shadcn\", \"AI tools I will not name in a type\"],",
-      "    shipped: true,",
-      "    originStory: \"started as a SaaS, became a lifestyle, still in the repo as reach-io-remix and reachv2\",",
-      "  },",
-      "  {",
-      "    name: \"G-Notify\",",
-      "    pitch: \"HTML mailer that talks to Gmail APIs because nodemailer felt like cheating\",",
-      "    stack: [\"Nuxt\", \"Express\", \"GAPIs\", \"the GDSC core-team recruiting spreadsheet\"],",
-      "    shipped: true,",
-      "    originStory: \"I was GDSC Lead. Twenty offer emails. Gmail said no to HTML. I said fine, I'll do it myself.\",",
-      "  },",
-      "  {",
-      "    name: \"Shorts Content Generator\",",
-      "    pitch: \"text in, YouTube Short out, ~22 seconds, CPU first, Pexels for the B-roll\",",
-      "    stack: [\"Python\", \"MoviePy\", \"Coqui TTS\", \"five fallbacks because TTS is a gaslight\"],",
-      "    shipped: true,",
-      "    originStory: \"open sourced because paying for faceless-video SaaS felt like a skill issue\",",
-      "  },",
-      "  {",
-      "    name: \"git-accounts-manager\",",
-      "    pitch: \"Electron app for people with too many GitHub identities and one laptop\",",
-      "    stack: [\"Electron\", \"ssh-agent diplomacy\"],",
-      "    shipped: true,",
-      "    originStory: \"work account, personal account, the third one I do not talk about\",",
-      "  },",
-      "  {",
-      "    name: \"GpayRedesign\",",
-      "    pitch: \"Flutter UI that Google Pay could have shipped if Google Pay asked me\",",
-      "    stack: [\"Flutter\", \"audacity\"],",
-      "    shipped: true,",
-      "    originStory: \"redesign energy. 2020. We do not apologize for the era.\",",
-      "  },",
-      "  {",
-      "    name: \"Sapphire\",",
-      "    pitch: \"a Python templating engine whose files end in .sph, on purpose\",",
-      "    stack: [\"Python\", \"the belief that Jinja needed a rival\"],",
-      "    shipped: true,",
-      "    originStory: \"small effort. big extension. nobody asked.\",",
-      "  },",
-      "  {",
-      "    name: \"Variable bitrate streaming server\",",
-      "    pitch: \"video in, HLS + MPEG-DASH out, a web page to pretend I was Netflix\",",
-      "    stack: [\"ffmpeg\", \"hope\", \"a 2019 blog post\"],",
-      "    shipped: true,",
-      "    originStory: \"I was in college and thought protocols were a personality\",",
+      "    originStory: \"wanted to see how far a free TMDB quota could stretch. Cut redundant calls by ~20%.\",",
       "  },",
       "];",
       "",
-      "export const also = [",
-      "  \"create-react-app-v2 — I forked the generator because the official one made me refactor\",",
-      "  \"106 public repos — this is not a flex, it is a cry for help\",",
-      "];",
-      "",
-      "// The index is a bit. The systems are in projects/*.md.",
+      "// The index is here. The systems are in major-projects/*.md.",
       "",
     ],
   },
@@ -268,11 +183,11 @@ export const documents: Record<string, DocumentContent> = {
     blocks: [
       {
         type: "callout",
-        text: "When I am not coding I like to play basketball, try photography, listen to hip-hop, and learn 3D printing. That sentence is from the old site. It was optimistic about the 'not coding' part.",
+        text: "When I'm not shipping code I'm either filming FactDefiner videos or stuck on problem #287 on LeetCode. Both feel like the same muscle.",
       },
       {
         type: "p",
-        text: "The rest of this window is jobs and repos. This file is basketball, printers, boards, cameras, and playlists. Games got their own file because I doxed the rank on purpose.",
+        text: "The rest of this window is internships and projects. This file is the camera, the contests, and the parts that don't show up on a transcript.",
       },
       {
         type: "h2",
@@ -281,39 +196,31 @@ export const documents: Record<string, DocumentContent> = {
       {
         type: "ul",
         items: [
-          "Basketball — pickup, not a podcast. Bengaluru courts are a distributed system. I defend, allegedly.",
-          "3D printing — another Benchy, slightly wrong. Slicer settings are compiler flags. Photography of the print is the only stage that ships.",
-          "IoT — boards that speak UART and spite. Firmware at 3am, after Voice infra at 3pm.",
-          "Photography and hip-hop — good light, worse playlists, walk home, open Cursor.",
+          "FactDefiner Vikrant — a YouTube channel for fact-based content, filmed between assignments and deploys.",
+          "LeetCode — 300+ problems solved, less about competitive programming and more about not losing the habit.",
+          "Hackathons — Algothon and Hult Prize happened because a team needed one more person who'd actually stay up for it.",
+          "Side projects that don't make the major-projects list yet — there's always one half-finished.",
         ],
       },
     ],
   },
-  gaming: {
+  achievements: {
     kind: "markdown",
-    title: "gaming.md",
+    title: "achievements.md",
     status: "live",
     blocks: [
       {
         type: "callout",
-        text: "The dock shipped. PSN, Steam, and a Valorant tracker sitting next to the résumé on purpose.",
+        text: "Two wins, one YGPA, and a LeetCode counter that keeps climbing.",
       },
       {
-        type: "p",
-        text: "Hobbies.md got the analog stuff. This file is ranked anxiety with URLs. Riot ID iresharma#noob, PSN iresharma, Steam ireshrma. Add me if the tag does not scare you.",
-      },
-      {
-        type: "p",
-        text: "I have 106 GitHub repos and a LeetCode profile I maintain after saying competitive programming never attracted me. The trackers below have the same energy: casual in the copy, unhinged in the friend request.",
-      },
-      { type: "live", source: "gaming" },
-      {
-        type: "h2",
-        text: "Elsewhere",
-      },
-      {
-        type: "links",
-        items: GAMING_TRACKERS,
+        type: "ul",
+        items: [
+          "1st place — Algothon (GFG x NSEC): designed and implemented an optimized algorithmic solution under a fixed time limit.",
+          "Best Innovation Idea — Hult Prize: presented a scalable business innovation concept to judges who were not engineers, which is its own skill.",
+          "YGPA 8.47 / 10 — B.Tech Information Technology, Netaji Subhash Engineering College.",
+          "300+ LeetCode problems solved — the unofficial, unassigned lab component.",
+        ],
       },
     ],
   },
@@ -324,15 +231,11 @@ export const documents: Record<string, DocumentContent> = {
     blocks: [
       {
         type: "callout",
-        text: "Channel name: WatchIreshStruggle. I then wrote a pipeline that makes Shorts in 22 seconds. The bit is load-bearing.",
+        text: "Channel name: FactDefiner Vikrant. Fact-based content, filmed in whatever time is left after shipping code.",
       },
       {
         type: "p",
-        text: "Same brand as the blog, moving pictures. I show up on camera the way I show up in markdown: a fullstack engineer who will automate the embarrassment if it takes more than one take. The Shorts generator exists because opening CapCut felt like a war crime. The channel exists because the blog needed a face, and I was available.",
-      },
-      {
-        type: "p",
-        text: "If you wanted a polished creator-economy funnel you came to the wrong extras folder. Subscribe if you like Voice infra by day and watching someone debug a TTS fallback ladder by night. Numbers below are live-ish. The jokes are cached forever.",
+        text: "Same person, different camera angle. FactDefiner Vikrant is where I post fact-checking and knowledge-style content — a different muscle than debugging Firestore indexes, but the same habit of finishing what I start.",
       },
       { type: "live", source: "youtube" },
       {
@@ -342,136 +245,7 @@ export const documents: Record<string, DocumentContent> = {
       {
         type: "links",
         items: [
-          {
-            label: "youtube.com/@iresharma — WatchIreshStruggle",
-            href: "https://www.youtube.com/@iresharma",
-          },
-          {
-            label: "The 22-second Shorts generator, as a blog post",
-            href: "https://blog.iresharma.com/building-an-ai-powered-youtube-shorts-generator-a-complete-technical-deep-dive",
-          },
-        ],
-      },
-    ],
-  },
-  blog: {
-    kind: "markdown",
-    title: "blog.md",
-    status: "live",
-    blocks: [
-      {
-        type: "callout",
-        text: "WatchIreshStruggle. Hashnode. Bengaluru. Building Voice by day, publishing the outage report by night.",
-      },
-      {
-        type: "p",
-        text: "I write when a side project becomes a confession. Latest hits: why a coding agent needs tree-sitter and LSP, the pipeline I built because I could not finish Venture Deals, and a local-first Shorts factory. Older hits include Reach's tech stack, learning gRPC the hard way, an Appwrite hackathon, and Nuxt SSG from when I still believed in static generation as a personality.",
-      },
-      {
-        type: "p",
-        text: "Individual posts also live in the Outline, like a second index I will not keep in sync. This file is the front door. That panel is the grep. Numbers below are scraped off the homepage once a day, because paying Hashnode for JSON felt like a bit.",
-      },
-      { type: "live", source: "blog" },
-      {
-        type: "h2",
-        text: "Elsewhere",
-      },
-      {
-        type: "links",
-        items: [
-          { label: "blog.iresharma.com — WatchIreshStruggle", href: "https://blog.iresharma.com" },
-          {
-            label: "hashnode.com/@Iresharma",
-            href: "https://hashnode.com/@Iresharma",
-          },
-        ],
-      },
-    ],
-  },
-  "post-agents": {
-    kind: "markdown",
-    title: "why-agents-read-code-three-ways.md",
-    status: "live",
-    blocks: [
-      {
-        type: "callout",
-        text: "WatchIreshStruggle · Aug 2026 · 8 min. The first problem is not generation. It is comprehension. Relatable.",
-      },
-      {
-        type: "p",
-        text: "If you are building something like Devin, the model cannot just grep a five-file toy repo and call it architecture. I wrote about why a coding agent needs tree-sitter for cheap local lookups and LSP for the expensive global ones — goto definition, find references, hover, diagnostics — and why conflating them either wastes tokens or wastes time.",
-      },
-      {
-        type: "p",
-        text: "Tree-sitter is instant and does not care if the rest of the project is on fire. LSP is slow to start and actually understands imports. The punchline is in the system prompt: prefer the cheapest tool that answers the question. I have been trying to live like that. I have not succeeded. Hence this portfolio.",
-      },
-      {
-        type: "links",
-        items: [
-          {
-            label: "Read the post on WatchIreshStruggle",
-            href: "https://blog.iresharma.com/why-a-coding-agent-needs-three-different-ways-to-read-code",
-          },
-        ],
-      },
-    ],
-  },
-  "post-venture": {
-    kind: "markdown",
-    title: "i-never-finished-venture-deals.md",
-    status: "live",
-    blocks: [
-      {
-        type: "callout",
-        text: "WatchIreshStruggle · Aug 2026 · 17 min. I grep books. Books do not grep. So I built Lens Distill.",
-      },
-      {
-        type: "p",
-        text: "I started Venture Deals three times. I finished a pipeline instead. PDF in, atomic claims out, each citing the exact paragraphs they came from, plus a concept graph. Seven stages. Haiku extracts, Sonnet merges duplicates, Opus builds the graph, pgvector holds the embeddings. On that book: 3,001 paragraphs became 978 claims, 54 concepts, 318 edges. About an hour. About two dollars. Zero pages actually read in order.",
-      },
-      {
-        type: "p",
-        text: "The part worth stealing: I label every paragraph [p412] in the prompt so citations are a range check, not a vibe. The part worth fearing: a silent fallback shipped an empty graph and the UI looked fine. I wrote the post so future me cannot pretend that was a feature.",
-      },
-      {
-        type: "links",
-        items: [
-          {
-            label: "Read the post — I never finished Venture Deals, so I built a pipeline",
-            href: "https://blog.iresharma.com/i-never-finished-venture-deals-so-i-built-a-pipeline-to-read-it-for-me",
-          },
-        ],
-      },
-    ],
-  },
-  "post-shorts": {
-    kind: "markdown",
-    title: "youtube-shorts-in-22-seconds.md",
-    status: "live",
-    blocks: [
-      {
-        type: "callout",
-        text: "WatchIreshStruggle · Jun 2025 · 5 min. Local-first. CPU. Five TTS engines. One personality.",
-      },
-      {
-        type: "p",
-        text: "I open-sourced a Python pipeline that turns text into a YouTube Short in about 22 seconds. MoviePy, Coqui TTS, Pexels for images, a fallback ladder that goes neural → cloud → pyttsx3 → macOS say → espeak, which is the five stages of grief. Perfect audio-video sync, 9:16, and the kind of architecture post you write when you are both proud and a little scared of how far you will go to avoid opening CapCut.",
-      },
-      {
-        type: "p",
-        text: "This is the same man who named his YouTube channel WatchIreshStruggle and then automated the struggle. I contain multitudes, and also a videoOrchestrator.py.",
-      },
-      {
-        type: "links",
-        items: [
-          {
-            label: "Read the deep dive",
-            href: "https://blog.iresharma.com/building-an-ai-powered-youtube-shorts-generator-a-complete-technical-deep-dive",
-          },
-          {
-            label: "GitHub — Shorts-Content-Generator",
-            href: "https://github.com/iresharma/Shorts-Content-Generator",
-          },
+          { label: "youtube.com/@Factdefiner — FactDefiner Vikrant", href: "https://www.youtube.com/@Factdefiner" },
         ],
       },
     ],

@@ -13,7 +13,7 @@ export function MobileProjectPage({ id }: { id: string }) {
       <div className="flex h-dvh max-h-dvh flex-col bg-editor pt-[env(safe-area-inset-top)]">
         <header className="flex shrink-0 items-center gap-2 border-b border-line px-4 py-3">
           <Link href="/" className="text-[13px] text-accent">
-            iresharma
+              vikrantan5
           </Link>
           <span className="text-dim">/</span>
           <span className="truncate text-[13px] text-muted">

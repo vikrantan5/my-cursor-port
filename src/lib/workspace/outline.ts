@@ -2,12 +2,9 @@ import type { OutlineItem, OutlineSymbol } from "./types";
 import { headingId } from "./slug";
 
 const CAREER = {
-  salesforce: headingId("Salesforce — Member of Technical Staff"),
-  twilio: headingId(
-    "Twilio — L1, then L2, plus a summer as an intern who stayed in the plot",
-  ),
-  supertokens: headingId("SuperTokens — Software Engineer"),
-  origin: headingId("The origin story, compressed"),
+  internship: headingId("Tending To Infinity — Full Stack Developer Intern"),
+  education: headingId("Netaji Subhash Engineering College"),
+  achievements: headingId("Achievements"),
 } as const;
 
 function role(
@@ -26,164 +23,81 @@ function role(
   };
 }
 
-const salesforce: OutlineSymbol = {
-  id: "tl-salesforce",
-  label: "Salesforce",
-  detail: "Dec 2025 →",
+const internship: OutlineSymbol = {
+  id: "tl-ttoi",
+  label: "Tending To Infinity",
+  detail: "Oct–Nov 2025",
   kind: "class",
   fileId: "career",
-  heading: CAREER.salesforce,
+  heading: CAREER.internship,
   children: [
-    role("tl-sf-mts", "Member of Technical Staff", "Voice infra", CAREER.salesforce),
+    role("tl-ttoi-fsd", "Full Stack Developer Intern", "Next.js, SSR, Lighthouse +30%", CAREER.internship),
   ],
 };
 
-const twilio: OutlineSymbol = {
-  id: "tl-twilio",
-  label: "Twilio",
-  detail: "2022–25",
+const education: OutlineSymbol = {
+  id: "tl-nsec",
+  label: "Netaji Subhash Engineering College",
+  detail: "2023–2027",
   kind: "class",
   fileId: "career",
-  heading: CAREER.twilio,
+  heading: CAREER.education,
   children: [
-    role("tl-twilio-l2", "L2", "2025 · four months", CAREER.twilio),
-    role("tl-twilio-l1", "L1", "2023–25 · Kafka / DR", CAREER.twilio),
-    role("tl-twilio-intern", "Intern", "2022 · Flex", CAREER.twilio),
+    {
+      id: "tl-nsec-btech",
+      label: "B.Tech, Information Technology",
+      detail: "YGPA 8.47 / 10",
+      kind: "property",
+      fileId: "career",
+      heading: CAREER.education,
+    },
   ],
 };
 
-const supertokens: OutlineSymbol = {
-  id: "tl-supertokens",
-  label: "SuperTokens",
-  detail: "2022–23",
-  kind: "class",
-  fileId: "career",
-  heading: CAREER.supertokens,
-  children: [
-    role("tl-st-swe", "Software Engineer", "Auth SDKs", CAREER.supertokens),
-  ],
-};
-
-const origin: OutlineSymbol = {
-  id: "tl-origin",
-  label: "Origin story",
-  detail: "2019–22",
+const achievements: OutlineSymbol = {
+  id: "tl-achievements",
+  label: "Achievements",
+  detail: "2024–25",
   kind: "module",
   fileId: "career",
-  heading: CAREER.origin,
+  heading: CAREER.achievements,
   children: [
     {
-      id: "tl-triomics",
-      label: "Triomics",
-      detail: "2022",
-      kind: "property",
-      fileId: "career",
-      heading: CAREER.origin,
-    },
-    {
-      id: "tl-exinous",
-      label: "Exinous",
-      detail: "2022",
-      kind: "property",
-      fileId: "career",
-      heading: CAREER.origin,
-    },
-    {
-      id: "tl-learners",
-      label: "Learners Digital",
-      detail: "2020–21",
-      kind: "property",
-      fileId: "career",
-      heading: CAREER.origin,
-    },
-    {
-      id: "tl-deshik",
-      label: "Deshik Labs",
-      detail: "2020–22",
-      kind: "property",
-      fileId: "career",
-      heading: CAREER.origin,
-    },
-    {
-      id: "tl-acadboost",
-      label: "AcadBoost",
-      detail: "2020",
-      kind: "property",
-      fileId: "career",
-      heading: CAREER.origin,
-    },
-    {
-      id: "tl-nie",
-      label: "NIE Mysore",
-      detail: "CSE 2019–23",
+      id: "tl-algothon",
+      label: "Algothon — GFG x NSEC",
+      detail: "1st place",
       kind: "enum",
       fileId: "career",
-      heading: CAREER.origin,
+      heading: CAREER.achievements,
+    },
+    {
+      id: "tl-hult",
+      label: "Hult Prize",
+      detail: "Best Innovation Idea",
+      kind: "enum",
+      fileId: "career",
+      heading: CAREER.achievements,
     },
   ],
 };
 
-export const careerTimeline: OutlineSymbol[] = [
-  salesforce,
-  twilio,
-  supertokens,
-  origin,
-];
+export const careerTimeline: OutlineSymbol[] = [internship, education, achievements];
 
-export const writingOutline: OutlineSymbol = {
-  id: "tl-writing",
-  label: "Writing",
-  detail: "WatchIreshStruggle",
-  kind: "module",
-  fileId: "blog",
-  children: [
-    {
-      id: "post-agents",
-      label: "why-agents-read-code-three-ways.md",
-      detail: "Aug 2026",
-      kind: "markdown",
-      fileId: "post-agents",
-    },
-    {
-      id: "post-venture",
-      label: "i-never-finished-venture-deals.md",
-      detail: "Aug 2026",
-      kind: "markdown",
-      fileId: "post-venture",
-    },
-    {
-      id: "post-shorts",
-      label: "youtube-shorts-in-22-seconds.md",
-      detail: "Jun 2025",
-      kind: "markdown",
-      fileId: "post-shorts",
-    },
-  ],
-};
-
-export const outlineItems: OutlineItem[] = (writingOutline.children ?? []).map(
-  (child) => ({
-    id: child.fileId,
-    name: child.label,
-    hint: child.detail ?? "",
-  }),
-);
+export const outlineItems: OutlineItem[] = [];
 
 export function flattenOutline(nodes: OutlineSymbol[]): OutlineSymbol[] {
   return nodes.flatMap((node) => [node, ...flattenOutline(node.children ?? [])]);
 }
 
 export function outlineTree(oldestFirst = false): OutlineSymbol[] {
-  const career = oldestFirst
-    ? careerTimeline
-        .slice()
-        .reverse()
-        .map((node) => ({
-          ...node,
-          children: node.children ? node.children.slice().reverse() : undefined,
-        }))
-    : careerTimeline;
-  return [...career, writingOutline];
+  if (!oldestFirst) return careerTimeline;
+  return careerTimeline
+    .slice()
+    .reverse()
+    .map((node) => ({
+      ...node,
+      children: node.children ? node.children.slice().reverse() : undefined,
+    }));
 }
 
 export function expandableIds(nodes: OutlineSymbol[]): string[] {

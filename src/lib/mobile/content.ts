@@ -1,4 +1,4 @@
-export type ChipId = "experience" | "projects" | "hobbies" | "writing";
+export type ChipId = "experience" | "projects" | "hobbies" | "achievements";
 
 export type Chip = {
   id: ChipId;
@@ -8,35 +8,35 @@ export type Chip = {
 };
 
 export const ABOUT_MESSAGE =
-  "Hey — I'm Iresh. Fullstack MTS at Salesforce, currently on native Voice infra in Bengaluru. Before that: Twilio (Kafka, disaster recovery, Flex), SuperTokens (Flutter/Go/Node/Python SDKs), and a freelance habit with 100+ GitHub repos. I named the blog WatchIreshStruggle on purpose. This is the phone-sized version. The Cursor window is on a computer.";
+  "Hey — I'm Vikrant. IT undergrad at Netaji Subhash Engineering College, Kolkata, building fullstack apps and obsessing over DSA. Shipped HireAI (100+ users) and MovieLab, interned at Tending To Infinity, and I'm sitting on 300+ LeetCode problems solved. FactDefiner Vikrant on YouTube is the camera-facing version. This is the phone-sized version. The Cursor window is on a computer.";
 
 export const CHIPS: Chip[] = [
   {
     id: "experience",
     label: "Experience",
-    prompt: "Walk me through Iresh's experience",
+    prompt: "Walk me through Vikrant's experience",
     reply:
-      "Salesforce now, building Voice. Twilio before that — intern on Flex, then L1 streaming tens of millions of events a minute, then L2 for a speedrun of four months. SuperTokens for auth SDKs and dashboard search. Triomics, Exinous, Learners Digital, Deshik, NIE GDSC Lead. The LinkedIn is long. The plot is 'kept shipping and collecting titles like Pokémon.'",
+      "Full Stack Developer Intern at Tending To Infinity, Oct–Nov 2025: Next.js, SSR, a reusable component library, Lighthouse scores up ~30% on the pages he touched. Before and around that: B.Tech Information Technology at Netaji Subhash Engineering College, 2023–2027, YGPA 8.47/10, and a steady grind through Data Structures, Algorithms, OOP, and DBMS.",
   },
   {
     id: "projects",
     label: "Projects",
-    prompt: "What has Iresh actually shipped?",
+    prompt: "What has Vikrant actually shipped?",
     reply:
-      "The long versions live in projects/: CodeLoom (coding agent across six repos — engine, cloud sandboxes, web, Go TUI — that opens PRs on its own repo), Lens Distill (seven-stage claim pipeline on Venture Deals), SeekSphere (NL search that compiles to SQL), Reach (Remix to a Go/gRPC k8s circus), G-Notify (Gmail APIs, no nodemailer). The index is projects.ts. The systems are the markdown.",
+      "Two, both real: HireAI, an AI-powered recruitment platform with a Playwright job-ingestion pipeline, seven Firestore collections, Groq-generated interview questions, and Razorpay billing — used by 100+ people. And MovieLab, a React + TMDB movie discovery app where Redux Toolkit caching cut redundant API calls by ~20%. The index is projects.ts, the long versions are in major-projects/.",
   },
   {
     id: "hobbies",
     label: "Hobbies",
-    prompt: "What does Iresh do when he is not shipping?",
+    prompt: "What does Vikrant do when he is not coding?",
     reply:
-      "Basketball, 3D printing, IoT, photography, hip-hop — extras/hobbies.md. Games live in extras/gaming.md: Valorant iresharma#noob, PSN iresharma, Steam ireshrma. Tracker.gg has the rank. I will not screenshot it here.",
+      "Runs FactDefiner Vikrant on YouTube, making fact-based content on the side. The rest of the time he's grinding LeetCode (300+ solved and counting) or deep in a hackathon — extras/hobbies.md has the rest.",
   },
   {
-    id: "writing",
-    label: "Writing",
-    prompt: "Where can I read Iresh's writing?",
+    id: "achievements",
+    label: "Achievements",
+    prompt: "What has Vikrant won?",
     reply:
-      "WatchIreshStruggle at blog.iresharma.com — same name as the YouTube channel, which tells you everything. Latest: why coding agents need tree-sitter and LSP, the pipeline I built because I couldn't finish Venture Deals, and a 22-second Shorts generator. I process trauma as markdown.",
+      "1st place at Algothon (GFG x NSEC) for an optimized algorithmic solution under a fixed time limit, and Best Innovation Idea at Hult Prize for a scalable business concept. Both in extras/achievements.md, next to the LeetCode count.",
   },
 ];

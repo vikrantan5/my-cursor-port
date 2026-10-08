@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { OG_ALT, SITE_TAGLINE } from "@/lib/site";
+import { OG_ALT, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
 export const alt = OG_ALT;
 export const size = { width: 1200, height: 630 };
@@ -85,7 +85,7 @@ export default function OpenGraphImage() {
                 fontSize: 22,
               }}
             >
-              iresharma — portfolio
+              {SITE_NAME} — portfolio
             </div>
             <div style={{ width: 62 }} />
           </div>
@@ -161,7 +161,7 @@ export default function OpenGraphImage() {
                   lineHeight: 1.1,
                 }}
               >
-                Iresh Sharma
+                Vikrant Singh
               </div>
               <div
                 style={{
@@ -181,7 +181,7 @@ export default function OpenGraphImage() {
                   fontSize: 22,
                 }}
               >
-                Salesforce · Voice infra · Bengaluru
+                IT Undergrad · Full Stack Dev · Kolkata
               </div>
               <div
                 style={{
@@ -191,7 +191,7 @@ export default function OpenGraphImage() {
                   fontSize: 20,
                 }}
               >
-                iresharma.com
+                github.com/{SITE_NAME}
               </div>
             </div>
           </div>

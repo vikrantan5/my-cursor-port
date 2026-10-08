@@ -101,7 +101,7 @@ function CommandPaletteDialog() {
                     : item.symbol.label;
               const subtitle =
                 item.kind === "file"
-                  ? item.path.slice(0, -1).join("/") || "iresharma"
+                      ? item.path.slice(0, -1).join("/") || "vikrantan5"
                   : item.kind === "outline"
                     ? "outline"
                     : item.symbol.detail ?? "career.md";

@@ -1,4 +1,3 @@
-import { codeloomReceiptsText } from "@/lib/codeloom";
 import { documents } from "@/lib/workspace/documents";
 import type { DocumentContent, MarkdownBlock } from "@/lib/workspace/types";
 import { SITE_DESCRIPTION } from "@/lib/site";
@@ -84,14 +83,6 @@ function Block({ block }: { block: MarkdownBlock }) {
         </ul>
       );
     case "live":
-      if (block.source === "codeloom") {
-        return <pre>{codeloomReceiptsText()}</pre>;
-      }
-      return (
-        <p>
-          Live {block.source} stats are shown in the editor window when
-          JavaScript is available.
-        </p>
-      );
+      return <p>Live {block.source} stats are shown in the editor window when JavaScript is available.</p>;
   }
 }

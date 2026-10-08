@@ -34,7 +34,7 @@ const FILTERS: Array<{ id: Filter; label: string }> = [
 ];
 
 async function fetchSnapshot(): Promise<LoadState> {
-  const response = await fetch("/api/github");
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL ?? ""}/api/github`);
   if (!response.ok) return { status: "error" };
   const data = (await response.json()) as GithubSnapshot;
   if (!data?.profile || !Array.isArray(data.items)) {
@@ -118,7 +118,7 @@ export function SourceControlView() {
           {state.status === "loading" ? <TimelineSkeleton /> : null}
           {state.status === "error" ? (
             <p className="px-4 py-3 text-[12px] text-dim italic">
-              GitHub blinked. The history is still on github.com/iresharma.
+              GitHub blinked. The history is still on github.com/vikrantan5.
             </p>
           ) : null}
           {state.status === "ready" && visible.length === 0 ? (
@@ -191,7 +191,7 @@ function Header({
         ) : (
           <>
             <p>
-              <span className="text-fg">iresharma</span>
+              <span className="text-fg">vikrantan5</span>
               <span className="text-dim"> · asking GitHub…</span>
             </p>
             <p className="text-dim">Public timeline, last 90 days.</p>

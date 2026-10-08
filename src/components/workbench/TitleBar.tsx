@@ -64,7 +64,7 @@ export function TitleBar() {
         >
           <Search className="size-3.5 shrink-0" strokeWidth={1.8} />
           <span className="min-w-0 flex-1 truncate text-left">
-            {active?.name ?? "iresharma"}
+             {active?.name ?? "vikrantan5"}
           </span>
           <kbd className="hidden rounded border border-line bg-[#1f1f1f] px-1.5 py-px font-mono text-[10px] text-dim sm:inline">
             {mod}P

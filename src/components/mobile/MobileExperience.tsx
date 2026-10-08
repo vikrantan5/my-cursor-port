@@ -35,8 +35,13 @@ export function MobileExperience() {
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const timeout = window.setTimeout(() => setBooting(false), reduced ? 0 : 1300);
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const timeout = window.setTimeout(
+      () => setBooting(false),
+      reduced ? 0 : 1300,
+    );
     return () => window.clearTimeout(timeout);
   }, []);
 
@@ -82,10 +87,10 @@ export function MobileExperience() {
       <header className="shrink-0 px-5 pt-4 pb-3">
         <div className="flex items-center gap-3">
           <span className="flex size-9 items-center justify-center rounded-full bg-[#2a2a2a] text-[11px] font-semibold tracking-wide text-fg">
-            IS
+            VS
           </span>
           <div className="min-w-0">
-            <p className="text-[15px] font-medium text-fg">Iresh Sharma</p>
+            <p className="text-[15px] font-medium text-fg">Vikrant Singh</p>
             <p className="text-[12px] text-dim">
               Agent · {exhausted ? "broke" : ready ? `${remaining} left` : "…"}
             </p>
@@ -160,7 +165,7 @@ export function MobileExperience() {
           <div className="rounded-2xl border border-line bg-[#1f1f1f] px-3.5 py-3">
             <p className="text-[13px] leading-5 text-dim">
               {closeReason === "off-topic" && !exhausted
-                ? "Chat closed. That was not about Iresh."
+               ? "Chat closed. That was not about Vikrant."
                 : BROKE_MESSAGE}
             </p>
             {closeReason === "off-topic" && !exhausted ? (
@@ -184,7 +189,7 @@ export function MobileExperience() {
                 onChange={(event) => setDraft(event.target.value)}
                 onKeyDown={onKeyDown}
                 rows={1}
-                placeholder="Ask about Iresh"
+                   placeholder="Ask about Vikrant"
                 className="max-h-28 min-h-11 flex-1 resize-none bg-transparent py-2 text-base leading-5 text-fg outline-none placeholder:text-dim"
               />
               <button

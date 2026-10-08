@@ -74,7 +74,7 @@ export function useAgentChat(seed: UiMessage[] = EMPTY) {
             id: crypto.randomUUID(),
             role: "assistant",
             content:
-              "OpenRouter ghosted us. Iresh probably fat-fingered the key, or the hobbies already ate the budget. Try once more.",
+              "The agent ghosted us for a second. Try once more.",
           },
         ]);
       } finally {

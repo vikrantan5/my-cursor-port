@@ -11,59 +11,26 @@ export type ProjectPageMeta = {
 
 export const PROJECT_PAGES: ProjectPageMeta[] = [
   {
-    id: "codeloom",
-    slug: "codeloom",
-    fileName: "codeloom.md",
-    title: "CodeLoom",
-    product: "autonomous coding agent",
-    year: "2026",
-    tagline: "An engine, six subagents, cloud sandboxes, and a PR at the end. It opens PRs on itself.",
-    description:
-      "CodeLoom is Iresh Sharma's coding agent: a Python engine speaking NDJSON over a Unix socket, an orchestrator with six subagent personalities in git worktrees, a guarded write funnel, tree-sitter and LSP, Docker sandboxes, and web and Go TUI clients.",
-  },
-  {
-    id: "lens-distill",
-    slug: "lens-distill",
-    fileName: "lens-distill.md",
-    title: "Lens Distill",
-    product: "claim distillation pipeline",
-    year: "2026",
-    tagline: "PDF plus a topic lens becomes cited claims, a vocabulary, and a concept graph.",
-    description:
-      "Lens Distill is Iresh Sharma's seven-stage book pipeline: parse, chunk, embed, extract, dedupe, canonicalize, and graph — Haiku, Sonnet, Opus, Neon pgvector, deterministic citation checks.",
-  },
-  {
-    id: "seeksphere",
-    slug: "seeksphere",
-    fileName: "seeksphere.md",
-    title: "SeekSphere",
-    product: "natural-language e-commerce search",
+    id: "hireai",
+    slug: "hireai",
+    fileName: "hireai.md",
+    title: "HireAI",
+    product: "AI-powered career & recruitment platform",
     year: "2025",
-    tagline: "Filter-heavy catalogs become a conversational query and a SQL-shaped answer.",
+    tagline: "Playwright scrapes the jobs, Groq writes the interview questions, Razorpay collects the subscription.",
     description:
-      "SeekSphere is Iresh Sharma's intelligent search platform for e-commerce: intent classification, LLM-to-SQL, an MCP connector layer, and a developer SDK modeled on Clerk and SuperTokens.",
+      "HireAI is Vikrant Singh's full-stack recruitment platform: a Playwright job-ingestion pipeline, seven Firestore collections, Groq-powered interview generation, and Razorpay billing — used by 100+ users.",
   },
   {
-    id: "reach",
-    slug: "reach",
-    fileName: "reach.md",
-    title: "Reach",
-    product: "creator work desk",
-    year: "2022–24",
-    tagline: "Calendar, mail, content, Linktree pages, Shopify, and analytics — then a k8s sequel.",
+    id: "movielab",
+    slug: "movielab",
+    fileName: "movielab.md",
+    title: "MovieLab",
+    product: "movie discovery platform",
+    year: "2024",
+    tagline: "Redux Toolkit caches the TMDB calls so scrolling through movies doesn't burn the API quota.",
     description:
-      "Reach is Iresh Sharma's SaaS for content teams. Remix to microservices: a Go auth proxy, gRPC, Postgres, Redis, Cloudflare R2, Kafka, Next.js ISR brand pages, and page analytics.",
-  },
-  {
-    id: "g-notify",
-    slug: "g-notify",
-    fileName: "g-notify.md",
-    title: "G-Notify",
-    product: "HTML mailer on Gmail APIs",
-    year: "2021–23",
-    tagline: "Mass HTML mail without nodemailer, because Gmail would not send the offer letters.",
-    description:
-      "G-Notify is Iresh Sharma's Nuxt and Express HTML mailer. It talks to Gmail APIs directly with googleapis and MIME, stores templates in Mongo, and grew out of GDSC recruiting.",
+      "MovieLab is Vikrant Singh's movie discovery platform built on React and the TMDB API, with Redux Toolkit trimming redundant calls by roughly 20%.",
   },
 ];
 

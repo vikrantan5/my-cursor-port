@@ -45,12 +45,12 @@ export function ActivityBar() {
           title="Account"
           aria-label="Account"
           onClick={() =>
-            flashStatus("Signed in as iresharma. No SSO. Just vibes.")
+            flashStatus("Signed in as vikrantan5. No SSO. Just vibes.")
           }
           className="flex size-12 items-center justify-center"
         >
           <span className="flex size-7 items-center justify-center rounded-full bg-[#3d3d3d] text-[10px] font-semibold tracking-wide text-fg">
-            IS
+            VS
           </span>
         </button>
         <button

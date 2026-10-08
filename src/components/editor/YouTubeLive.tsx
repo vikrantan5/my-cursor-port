@@ -21,7 +21,7 @@ export function YouTubeLive() {
   useEffect(() => {
     let cancelled = false;
 
-    fetch("/api/youtube")
+     fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL ?? ""}/api/youtube`)
       .then(async (response) => {
         if (response.status === 503) return { status: "unconfigured" } as const;
         if (!response.ok) return { status: "error" } as const;

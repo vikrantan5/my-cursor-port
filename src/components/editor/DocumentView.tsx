@@ -1,9 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { BlogLive } from "@/components/editor/BlogLive";
-import { CodeLoomLive } from "@/components/editor/CodeLoomLive";
-import { GamingLive } from "@/components/editor/GamingLive";
 import { YouTubeLive } from "@/components/editor/YouTubeLive";
 import { cn } from "@/lib/cn";
 import { documents } from "@/lib/workspace/documents";
@@ -137,9 +134,6 @@ function MarkdownView({
             );
           }
           if (block.type === "live") {
-            if (block.source === "blog") return <BlogLive key={index} />;
-            if (block.source === "gaming") return <GamingLive key={index} />;
-            if (block.source === "codeloom") return <CodeLoomLive key={index} />;
             return <YouTubeLive key={index} />;
           }
           return <p key={index}>{block.text}</p>;
@@ -193,7 +187,7 @@ function highlightTs(line: string) {
         </span>
       );
     }
-    if (token === "Project" || token === "dayJob") {
+    if (token === "Project" || token === "status") {
       return (
         <span key={index} className="text-[#4ec9b0]">
           {token}

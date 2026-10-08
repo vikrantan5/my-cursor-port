@@ -14,9 +14,9 @@ import { cn } from "@/lib/cn";
 import { useWorkbench } from "@/state/workbench-context";
 
 const STARTERS = [
-  "Walk me through Iresh's career",
-  "What has Iresh actually shipped?",
-  "Roast Iresh's résumé",
+  "Walk me through Vikrant's career",
+  "What has Vikrant actually shipped?",
+  "What has Vikrant won?",
 ];
 
 export function ChatPanel({ className }: { className?: string }) {
@@ -106,12 +106,12 @@ export function ChatPanel({ className }: { className?: string }) {
         {messages.length === 0 ? (
           <div className="flex h-full flex-col items-center justify-center gap-2 px-4 text-center">
             <p className="text-[15px] text-fg">
-              {exhausted ? "Agent is broke" : "Ask about Iresh"}
+              {exhausted ? "Agent is broke" : "Ask about Vikrant"}
             </p>
             <p className="max-w-[260px] text-[12px] leading-5 text-dim">
               {exhausted
                 ? BROKE_MESSAGE
-                : "Five replies. About Iresh Sharma only. Anything else and I close the chat. The bit is making fun of him."}
+                : "Five replies. About Vikrant Singh only. Anything else and I close the chat."}
             </p>
             {!exhausted ? (
               <div className="mt-3 flex flex-wrap justify-center gap-1.5">
@@ -151,7 +151,7 @@ export function ChatPanel({ className }: { className?: string }) {
         <div className="border-t border-line p-3 md:border-t-0">
           <p className="rounded-xl border border-line bg-[#1f1f1f] px-3 py-3 text-[12px] leading-5 text-dim">
             {closeReason === "off-topic" && !exhausted
-              ? "Chat closed. That was not about Iresh. New chat if he still has tokens."
+                 ? "Chat closed. That was not about Vikrant. New chat if the quota's still alive."
               : BROKE_MESSAGE}
           </p>
         </div>
@@ -166,7 +166,7 @@ export function ChatPanel({ className }: { className?: string }) {
               onChange={(event) => setDraft(event.target.value)}
               onKeyDown={onComposerKeyDown}
               rows={2}
-              placeholder="Ask anything about Iresh"
+               placeholder="Ask anything about Vikrant"
               className="w-full resize-none bg-transparent text-base leading-6 text-fg outline-none placeholder:text-dim md:text-[13px] md:leading-5"
             />
             <div className="mt-1 flex items-center justify-between">
@@ -175,7 +175,7 @@ export function ChatPanel({ className }: { className?: string }) {
                   <AtSign className="size-3.5" strokeWidth={1.8} />
                   Agent
                 </span>
-                <span>Haiku</span>
+                  <span>Claude Haiku</span>
               </div>
               <button
                 type="submit"
