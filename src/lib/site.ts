@@ -4,7 +4,7 @@ export const SITE_URL = "https://vikrantsingh.dev";
 export const SITE_NAME = "vikrantan5";
 export const SITE_TITLE = "Vikrant Singh — full stack developer";
 export const SITE_DESCRIPTION =
-  "Vikrant Singh's software engineering portfolio, themed as a Cursor window. IT undergraduate at Netaji Subhash Engineering College shipping HireAI and MovieLab. 300+ LeetCode problems solved. FactDefiner Vikrant on YouTube.";
+  "Vikrant Singh's software engineering portfolio, themed as a Cursor window. IT undergraduate at Netaji Subhash Engineering College shipping HireAI and MovieLab. 500+ LeetCode problems solved. FactDefiner Vikrant on YouTube.";
 export const SITE_TAGLINE = "Full stack by day. FactDefiner by night.";
 
 export const SITE_AUTHOR = {

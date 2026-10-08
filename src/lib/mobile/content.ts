@@ -8,7 +8,7 @@ export type Chip = {
 };
 
 export const ABOUT_MESSAGE =
-  "Hey — I'm Vikrant. IT undergrad at Netaji Subhash Engineering College, Kolkata, building fullstack apps and obsessing over DSA. Shipped HireAI (100+ users) and MovieLab, interned at Tending To Infinity, and I'm sitting on 300+ LeetCode problems solved. FactDefiner Vikrant on YouTube is the camera-facing version. This is the phone-sized version. The Cursor window is on a computer.";
+  "Hey — I'm Vikrant. IT undergrad at Netaji Subhash Engineering College, Kolkata, building fullstack apps and obsessing over DSA. Shipped HireAI (100+ users) and MovieLab, interned at Tending To Infinity, and I'm sitting on 500+ LeetCode problems solved. FactDefiner Vikrant on YouTube is the camera-facing version. This is the phone-sized version. The Cursor window is on a computer.";
 
 export const CHIPS: Chip[] = [
   {
@@ -30,7 +30,7 @@ export const CHIPS: Chip[] = [
     label: "Hobbies",
     prompt: "What does Vikrant do when he is not coding?",
     reply:
-      "Runs FactDefiner Vikrant on YouTube, making fact-based content on the side. The rest of the time he's grinding LeetCode (300+ solved and counting) or deep in a hackathon — extras/hobbies.md has the rest.",
+      "Runs FactDefiner Vikrant on YouTube, making fact-based content on the side. The rest of the time he's grinding LeetCode (500+ solved and counting) or deep in a hackathon — extras/hobbies.md has the rest.",
   },
   {
     id: "achievements",

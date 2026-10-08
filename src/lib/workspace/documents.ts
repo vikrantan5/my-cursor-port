@@ -9,7 +9,7 @@ export const documents: Record<string, DocumentContent> = {
     blocks: [
       {
         type: "callout",
-        text: "IT undergrad who ships fullstack apps by day and reviews facts on FactDefiner by night. 300+ LeetCode problems solved and counting.",
+        text: "IT undergrad who ships fullstack apps by day and reviews facts on FactDefiner by night. 500+ LeetCode problems solved and counting.",
       },
       {
         type: "p",
@@ -83,7 +83,7 @@ export const documents: Record<string, DocumentContent> = {
         type: "ul",
         items: [
           "Kolkata, at Netaji Subhash Engineering College, Information Technology, class of 2027.",
-          "300+ LeetCode problems solved — competitive programming was never the goal, consistency was.",
+          "500+ LeetCode problems solved — competitive programming was never the goal, consistency was.",
           "FactDefiner Vikrant on YouTube — fact-based content, filmed between assignments.",
           "Hackathons and algorithm contests whenever the timing works out.",
         ],
@@ -117,7 +117,7 @@ export const documents: Record<string, DocumentContent> = {
       },
       {
         type: "p",
-        text: "B.Tech in Information Technology, 2023 → 2027, YGPA 8.47/10. The coursework that actually shows up in the projects: Data Structures & Algorithms, Object-Oriented Programming, DBMS & SQL, and System Design. The 300+ solved LeetCode problems are the unofficial lab component nobody assigned.",
+        text: "B.Tech in Information Technology, 2023 → 2027, YGPA 8.47/10. The coursework that actually shows up in the projects: Data Structures & Algorithms, Object-Oriented Programming, DBMS & SQL, and System Design. The 500+ solved LeetCode problems are the unofficial lab component nobody assigned.",
       },
       {
         type: "h2",
@@ -197,7 +197,7 @@ export const documents: Record<string, DocumentContent> = {
         type: "ul",
         items: [
           "FactDefiner Vikrant — a YouTube channel for fact-based content, filmed between assignments and deploys.",
-          "LeetCode — 300+ problems solved, less about competitive programming and more about not losing the habit.",
+          "LeetCode — 500+ problems solved, less about competitive programming and more about not losing the habit.",
           "Hackathons — Algothon and Hult Prize happened because a team needed one more person who'd actually stay up for it.",
           "Side projects that don't make the major-projects list yet — there's always one half-finished.",
         ],
@@ -219,7 +219,7 @@ export const documents: Record<string, DocumentContent> = {
           "1st place — Algothon (GFG x NSEC): designed and implemented an optimized algorithmic solution under a fixed time limit.",
           "Best Innovation Idea — Hult Prize: presented a scalable business innovation concept to judges who were not engineers, which is its own skill.",
           "YGPA 8.47 / 10 — B.Tech Information Technology, Netaji Subhash Engineering College.",
-          "300+ LeetCode problems solved — the unofficial, unassigned lab component.",
+          "500+ LeetCode problems solved — the unofficial, unassigned lab component.",
         ],
       },
     ],
