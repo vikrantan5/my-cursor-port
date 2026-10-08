@@ -1,4 +1,4 @@
-# iresharma
+# Vikrant Singh
 
 Software engineering portfolio with two surfaces:
 
