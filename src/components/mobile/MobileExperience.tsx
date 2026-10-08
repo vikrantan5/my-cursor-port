@@ -31,9 +31,11 @@ export function MobileExperience() {
     send,
     reset,
   } = useAgentChat(SEED);
+
   const [draft, setDraft] = useState("");
   const scrollerRef = useRef<HTMLDivElement>(null);
 
+  // Boot screen timing (respects reduced motion)
   useEffect(() => {
     const reduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
@@ -45,16 +47,18 @@ export function MobileExperience() {
     return () => window.clearTimeout(timeout);
   }, []);
 
+  // Auto-scroll to newest content
   useEffect(() => {
-    scrollerRef.current?.scrollTo({
-      top: scrollerRef.current.scrollHeight,
-      behavior: "smooth",
-    });
+    const el = scrollerRef.current;
+    if (!el) return;
+    el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
   }, [messages, pending, exhausted]);
+
+  const locked = closed || exhausted || !ready;
 
   const submit = (text: string) => {
     const prompt = text.trim();
-    if (!prompt || pending || closed) return;
+    if (!prompt || pending || locked) return;
     setDraft("");
     void send(prompt);
   };
@@ -71,7 +75,6 @@ export function MobileExperience() {
     }
   };
 
-  const locked = closed || remaining <= 0;
   const showChips = !locked && !pending;
 
   if (booting) {
@@ -92,7 +95,8 @@ export function MobileExperience() {
           <div className="min-w-0">
             <p className="text-[15px] font-medium text-fg">Vikrant Singh</p>
             <p className="text-[12px] text-dim">
-              Agent · {exhausted ? "broke" : ready ? `${remaining} left` : "…"}
+              Agent ·{" "}
+              {exhausted ? "broke" : ready ? `${remaining} left` : "…"}
             </p>
           </div>
         </div>
@@ -102,7 +106,10 @@ export function MobileExperience() {
         </p>
       </header>
 
-      <div ref={scrollerRef} className="min-h-0 flex-1 overflow-auto px-5 py-2">
+      <div
+        ref={scrollerRef}
+        className="min-h-0 flex-1 overflow-auto px-5 py-2"
+      >
         <div className="space-y-5">
           {messages.map((message, index) => (
             <div key={message.id}>
@@ -120,6 +127,7 @@ export function MobileExperience() {
                   <p className="text-muted">{message.content}</p>
                 )}
               </div>
+
               {index === 0 && message.id === "about" && showChips ? (
                 <div className="mt-4 flex flex-wrap gap-2">
                   {CHIPS.map((chip) => (
@@ -136,10 +144,14 @@ export function MobileExperience() {
               ) : null}
             </div>
           ))}
+
           {pending ? (
             <p className="text-[13px] text-dim">
               thinking
-              <span className="boot-cursor ml-1 inline-block h-[12px] w-[6px] translate-y-[1px] bg-dim" />
+              <span
+                aria-hidden="true"
+                className="boot-cursor ml-1 inline-block h-[12px] w-[6px] translate-y-[1px] bg-dim"
+              />
             </p>
           ) : null}
         </div>
@@ -165,7 +177,7 @@ export function MobileExperience() {
           <div className="rounded-2xl border border-line bg-[#1f1f1f] px-3.5 py-3">
             <p className="text-[13px] leading-5 text-dim">
               {closeReason === "off-topic" && !exhausted
-               ? "Chat closed. That was not about Vikrant."
+                ? "Chat closed. That was not about Vikrant."
                 : BROKE_MESSAGE}
             </p>
             {closeReason === "off-topic" && !exhausted ? (
@@ -189,7 +201,7 @@ export function MobileExperience() {
                 onChange={(event) => setDraft(event.target.value)}
                 onKeyDown={onKeyDown}
                 rows={1}
-                   placeholder="Ask about Vikrant"
+                placeholder="Ask about Vikrant"
                 className="max-h-28 min-h-11 flex-1 resize-none bg-transparent py-2 text-base leading-5 text-fg outline-none placeholder:text-dim"
               />
               <button

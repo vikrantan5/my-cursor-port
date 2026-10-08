@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  PanelLeft,
-  PanelRight,
-  Search,
-} from "lucide-react";
+import { PanelLeft, PanelRight, Search } from "lucide-react";
 import type { ReactNode } from "react";
 import { modifierLabel } from "@/lib/platform";
 import { cn } from "@/lib/cn";
@@ -26,6 +22,16 @@ export function TitleBar() {
   const active = activeTabId ? getOpenable(activeTabId) : null;
   const mod = modifierLabel();
 
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      void document.documentElement
+        .requestFullscreen()
+        .catch(() => flashStatus("Full screen is blocked here."));
+    } else {
+      void document.exitFullscreen().catch(() => {});
+    }
+  };
+
   return (
     <header className="flex h-11 shrink-0 select-none items-center gap-2 border-b border-line bg-titlebar px-3 md:h-10 md:gap-0">
       <div className="flex shrink-0 items-center md:w-[140px]">
@@ -45,13 +51,7 @@ export function TitleBar() {
           <TrafficLight
             color="#28c840"
             title="Full screen"
-            onClick={() => {
-              if (!document.fullscreenElement) {
-                void document.documentElement.requestFullscreen();
-              } else {
-                void document.exitFullscreen();
-              }
-            }}
+            onClick={toggleFullscreen}
           />
         </div>
       </div>
@@ -64,7 +64,7 @@ export function TitleBar() {
         >
           <Search className="size-3.5 shrink-0" strokeWidth={1.8} />
           <span className="min-w-0 flex-1 truncate text-left">
-             {active?.name ?? "vikrantan5"}
+            {active?.name ?? "vikrantan5"}
           </span>
           <kbd className="hidden rounded border border-line bg-[#1f1f1f] px-1.5 py-px font-mono text-[10px] text-dim sm:inline">
             {mod}P
@@ -107,7 +107,7 @@ function TrafficLight({
       title={title}
       aria-label={title}
       onClick={onClick}
-      className="size-[12px] rounded-full"
+      className="size-[12px] rounded-full outline-none transition focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-1 focus-visible:ring-offset-titlebar"
       style={{ backgroundColor: color }}
     />
   );
@@ -129,9 +129,10 @@ function IconButton({
       type="button"
       title={label}
       aria-label={label}
+      aria-pressed={active}
       onClick={onClick}
       className={cn(
-        "flex size-7 items-center justify-center rounded-md text-dim hover:bg-hover hover:text-fg",
+        "flex size-7 items-center justify-center rounded-md text-dim transition-colors hover:bg-hover hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40",
         active && "text-fg",
       )}
     >

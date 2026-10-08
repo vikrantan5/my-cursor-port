@@ -15,6 +15,7 @@ export function ActivityBar() {
         {ACTIVITY_ITEMS.map((item) => {
           const active = sidebarOpen && sidebarView === item.id;
           const Icon = item.icon;
+
           return (
             <button
               key={item.id}
@@ -29,6 +30,7 @@ export function ActivityBar() {
               )}
             >
               <span
+                aria-hidden="true"
                 className={cn(
                   "absolute inset-y-2 left-0 w-0.5 rounded-r bg-fg transition-opacity",
                   active ? "opacity-100" : "opacity-0",
@@ -39,6 +41,7 @@ export function ActivityBar() {
           );
         })}
       </nav>
+
       <div className="flex flex-col items-center gap-1 pb-2">
         <button
           type="button"
@@ -53,6 +56,7 @@ export function ActivityBar() {
             VS
           </span>
         </button>
+
         <button
           type="button"
           title="Settings"
