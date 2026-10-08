@@ -49,7 +49,7 @@ export type MarkdownBlock =
       href?: string;
     }
   | { type: "links"; items: Array<{ label: string; href: string }> }
-  | { type: "live"; source: "youtube" };
+  | { type: "live"; source: "youtube" | "codeloom" };
 
 export type DocumentContent =
   | {
