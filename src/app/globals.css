@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-workbench: #141414;
+  --color-titlebar: #181818;
+  --color-activity: #161616;
+  --color-sidebar: #181818;
+  --color-editor: #1e1e1e;
+  --color-chat: #181818;
+  --color-status: #181818;
+  --color-line: #2b2b2b;
+  --color-fg: #cccccc;
+  --color-muted: #9d9d9d;
+  --color-dim: #6e6e6e;
+  --color-accent: #3794ff;
+  --color-hover: #2a2d2e;
+  --color-selection: #04395e;
+  --color-warning: #cca700;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-workbench);
+  color: var(--color-fg);
+  color-scheme: dark;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+[data-group] {
+  height: 100%;
+}
+
+[data-panel] {
+  min-height: 0;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::selection {
+  background: #264f78;
+}
+
+@keyframes boot-cursor {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.boot-cursor {
+  animation: boot-cursor 1s steps(1) infinite;
+}

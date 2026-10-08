@@ -1,0 +1,52 @@
+{
+  "scrapedAt": "2026-08-18T15:42:00.728Z",
+  "publication": {
+    "title": "WatchIreshStruggle",
+    "url": "https://blog.iresharma.com",
+    "followers": 24,
+    "posts": 20,
+    "views": 2364
+  },
+  "latest": [
+    {
+      "id": "6a8444e10f3c9d013e58eb01",
+      "title": "Why a Coding Agent Needs Three Different Ways to \"Read\" Code",
+      "url": "https://blog.iresharma.com/why-a-coding-agent-needs-three-different-ways-to-read-code",
+      "brief": "If you're building something like Devin, an agent that goes end-to-end from a task description to a working code change. The very first problem you hit isn't code generation. It's comprehension. Befor",
+      "coverUrl": "https://cdn.hashnode.com/uploads/covers/5f4676819b597625e2dec1dc/3ccb0ff9-4e86-4cac-9723-0828f0c3d1c8.png",
+      "publishedAt": "2026-08-18T11:41:21.829Z",
+      "readTimeInMinutes": 8,
+      "views": 1
+    },
+    {
+      "id": "6a754009fea22d0dc40a60c7",
+      "title": "I never finished Venture Deals, so I built a pipeline to read it for me",
+      "url": "https://blog.iresharma.com/i-never-finished-venture-deals-so-i-built-a-pipeline-to-read-it-for-me",
+      "brief": "I've started Venture Deals three times. I've never finished it.\nThat's not really a discipline problem, it's a format problem. I care about maybe 15% of a book like that: the definitions, the mechanic",
+      "coverUrl": "https://cdn.hashnode.com/uploads/covers/5f4676819b597625e2dec1dc/0fc383c1-a30e-4534-b155-f1cdcba7c28c.png",
+      "publishedAt": "2026-08-07T02:16:41.893Z",
+      "readTimeInMinutes": 17,
+      "views": 55
+    },
+    {
+      "id": "684852a3db1737f3f6499f3b",
+      "title": "Building an AI-Powered YouTube Shorts Generator: A Complete Technical Deep Dive",
+      "url": "https://blog.iresharma.com/building-an-ai-powered-youtube-shorts-generator-a-complete-technical-deep-dive",
+      "brief": "In the era of short-form content dominance, creating engaging YouTube Shorts consistently can be a time-consuming challenge. Today, I'm excited to share a comprehensive technical breakdown of an open-source YouTube Shorts generator that automates the...",
+      "coverUrl": "https://cdn.hashnode.com/res/hashnode/image/upload/v1749570158661/6b1f985b-0e38-4e4f-9d1d-20446d17d2ff.png",
+      "publishedAt": "2025-06-10T15:43:31.366Z",
+      "readTimeInMinutes": 5,
+      "views": 100
+    },
+    {
+      "id": "66b69e35bf23efec33390166",
+      "title": "Calculating analytics for webpages",
+      "url": "https://blog.iresharma.com/calculating-analytics-for-webpages",
+      "brief": "Lately, I've been diving deep into the world of my SaaS product, Reach. I've been thoroughly immersed in figuring out how to calculate basic site analytics—focusing on the usual suspects like views, unique views, clicks, and a range of other interest...",
+      "coverUrl": "https://cdn.hashnode.com/res/hashnode/image/upload/v1706569110321/60b8dfb9-3b00-435c-8e26-a9582ecd823d.png",
+      "publishedAt": "2024-08-09T22:54:45.368Z",
+      "readTimeInMinutes": 2,
+      "views": 42
+    }
+  ]
+}
